@@ -1,0 +1,23 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    width: 25vw;
+
+    .card-header {
+        .card-title {
+            text-align: center;
+            font-weight: lighter;
+        }
+    }
+
+    .card-body {
+
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
