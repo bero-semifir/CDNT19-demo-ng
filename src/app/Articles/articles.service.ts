@@ -15,23 +15,23 @@ export class ArticlesService {
    * @returns La liste des articles
    */
   getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>("https://jsonplaceholder.typicode.com/posts");
+    return this.http.get<Article[]>("http://localhost:3000/posts");
   }
 
   getArticleById(id: number): Observable<Article> {
-    return this.http.get<Article>(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    return this.http.get<Article>(`http://localhost:3000/posts/${id}`);
   }
 
   addArticle(article: Article) {
-    return this.http.post("https://jsonplaceholder.typicode.com/posts", article);
+    return this.http.post("http://localhost:3000/posts", article);
   }
 
   deleteArticle(article: Article) {
-    return this.http.delete(`https://jsonplaceholder.typicode.com/posts/${article.id}`);
+    return this.http.delete(`http://localhost:3000/posts/${article.id}`);
   }
 
   updateArticle(id: number, article: Article) {
-    return this.http.put(`https://jsonplaceholder.typicode.com/posts/${id}`, article);
+    return this.http.put(`http://localhost:3000/posts/${id}`, article);
   }
 
 }

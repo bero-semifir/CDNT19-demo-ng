@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Albums } from './albums';
 
-const API_URL = "https://jsonplaceholder.typicode.com/albums";
+const API_URL = "http://localhost:3000/albums";
 
 @Injectable({
   providedIn: 'root'

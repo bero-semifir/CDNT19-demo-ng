@@ -4,6 +4,6 @@
     <h2>Nombre d'utilisateurs: <app-compteur [nombre]="users.length"></app-compteur></h2>
 </div>
 
-<div>
+<div class="flex">
     <app-usercard *ngFor="let user of users" [user]="user"></app-usercard>
 </div>
