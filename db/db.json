@@ -242,6 +242,19 @@
         "bs": "sdlkqqsdsd"
       },
       "id": 11
+    },
+    {
+      "name": "Michel",
+      "username": "Trabendo",
+      "email": "m.trabendo@gmail.com",
+      "phone": "0784560877",
+      "website": "michel.fr",
+      "company": {
+        "name": "Aston",
+        "catchPhrase": "Poulet",
+        "bs": "qsldkdnfqlmskdn q qsfn"
+      },
+      "id": 12
     }
   ],
   "posts": [

@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Article } from './article';
+
+const API_URL = `${environment.API_URL}/posts`;
 
 @Injectable({
   providedIn: 'root'
@@ -15,23 +18,23 @@ export class ArticlesService {
    * @returns La liste des articles
    */
   getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>("http://localhost:3000/posts");
+    return this.http.get<Article[]>(API_URL);
   }
 
   getArticleById(id: number): Observable<Article> {
-    return this.http.get<Article>(`http://localhost:3000/posts/${id}`);
+    return this.http.get<Article>(`${API_URL}/${id}`);
   }
 
   addArticle(article: Article) {
-    return this.http.post("http://localhost:3000/posts", article);
+    return this.http.post(API_URL, article);
   }
 
   deleteArticle(article: Article) {
-    return this.http.delete(`http://localhost:3000/posts/${article.id}`);
+    return this.http.delete(`${API_URL}/${article.id}`);
   }
 
   updateArticle(id: number, article: Article) {
-    return this.http.put(`http://localhost:3000/posts/${id}`, article);
+    return this.http.put(`${API_URL}/${id}`, article);
   }
 
 }
