@@ -1,7 +1,8 @@
 type Article = {
+    id?: number;
+    userId?: number;
     title: string;
-    content: string;
-    read?: Boolean;
+    body: string;
 }
 
 export { Article };

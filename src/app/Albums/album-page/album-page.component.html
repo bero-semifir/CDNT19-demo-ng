@@ -1,0 +1,5 @@
+<h1>Liste des albums</h1>
+
+<app-compteur [nombre]="albums.length"></app-compteur>
+
+<app-album-info *ngFor="let album of albums" [album]="album"></app-album-info>

@@ -1,0 +1,13 @@
+<form (ngSubmit)="createArticle()" [formGroup]="form">
+    <div>
+        <label for="titre">Titre</label>
+        <input type="text" id="titre" name="titre" formControlName="title">
+        <p *ngIf="form.controls['title'].invalid">Le titre doit faire entre 20 et 80 caractères (actuellement: {{ form.value.title.length }} )</p>
+    </div>
+    <div>
+        <label for="contenu">Contenu</label>
+        <textarea type="text" id="contenu" name="contenu" formControlName="body"></textarea>
+        <p *ngIf="form.controls['body'].invalid">Le contenu doit faire minimum 200 caractères (actuellement: {{ form.value.body.length }} )</p>
+    </div>
+    <button type="submit" [disabled]="form.invalid">Ajouter un article</button>
+</form>

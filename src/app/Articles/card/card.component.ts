@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { Article } from '../Articles/article';
-import { ArticlesService } from '../Articles/articles.service';
+import { Article } from '../article';
+import { ArticlesService } from '../articles.service';
 
 @Component({
   selector: 'app-card',
@@ -26,11 +26,7 @@ export class CardComponent implements OnInit, OnDestroy {
   }
 
   deleteArticle(article: Article): void {
-    console.log(this.articlesService.getArticles());
-    
     this.articlesService.deleteArticle(article);
-
-    console.log(this.articlesService.getArticles());
   }
 
 }

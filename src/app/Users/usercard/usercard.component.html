@@ -1,0 +1,9 @@
+<div>
+    {{ user.name }}
+    <ul>
+        <li><a [href]="'mailto:'+user.email">{{ user.email }}</a></li>
+        <li><a [href]="'tel:'+user.phone">{{ user.phone }}</a></li>
+        <li><a [href]="user.website" target="_blank">{{ user.website }}</a></li>
+    </ul>
+    <p>Travaille pour {{ user.company.name }}</p>
+</div>

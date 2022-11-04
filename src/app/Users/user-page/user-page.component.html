@@ -1,0 +1,9 @@
+<h1>Liste des utilisateurs</h1>
+
+<div>
+    <h2>Nombre d'utilisateurs: <app-compteur [nombre]="users.length"></app-compteur></h2>
+</div>
+
+<div>
+    <app-usercard *ngFor="let user of users" [user]="user"></app-usercard>
+</div>
