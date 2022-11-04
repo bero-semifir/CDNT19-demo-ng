@@ -1,0 +1,38 @@
+<form [formGroup]="form" (ngSubmit)="addUser()">
+    <div>
+        <label for="name">Nom</label>
+        <input type="text" name="name" id="name" formControlName="name">
+    </div>
+    <div>
+        <label for="username">Nom d'utilisateut</label>
+        <input type="text" name="username" id="username" formControlName="username">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" formControlName="email">
+    </div>
+    <div>
+        <label for="phone">Telephone</label>
+        <input type="text" name="phone" id="phone" formControlName="phone">
+    </div>
+    <div>
+        <label for="website">Website</label>
+        <input type="text" name="website" id="website" formControlName="website">
+    </div>
+    <div formGroupName="company">
+        <div>
+            <label for="companyName">Nom de l'entreprise</label>
+            <input type="text" name="companyName" id="companyName" formControlName="name">
+        </div>
+        <div>
+            <label for="catchPhrase">Phrase d'accroche</label>
+            <input type="text" name="catchPhrase" id="catchPhrase" formControlName="catchPhrase">
+        </div>
+        <div>
+            <label for="bs">bs</label>
+            <input type="text" name="bs" id="bs" formControlName="bs">
+        </div>
+
+    </div>
+    <button type="submit">Ajouter</button>
+</form>

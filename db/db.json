@@ -229,6 +229,19 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "name": "Routier",
+      "username": "Benoit",
+      "email": "benoit.routier7@gmail.com",
+      "phone": "0673420528",
+      "website": "michel.fr",
+      "company": {
+        "name": "semifir",
+        "catchPhrase": "Poulet",
+        "bs": "sdlkqqsdsd"
+      },
+      "id": 11
     }
   ],
   "posts": [

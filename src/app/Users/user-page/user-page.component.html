@@ -4,6 +4,8 @@
     <h2>Nombre d'utilisateurs: <app-compteur [nombre]="users.length"></app-compteur></h2>
 </div>
 
+<button routerLink="create">Ajouter un utilisateur</button>
+
 <div class="flex">
     <app-usercard *ngFor="let user of users" [user]="user"></app-usercard>
 </div>

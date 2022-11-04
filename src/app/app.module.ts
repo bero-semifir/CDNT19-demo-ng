@@ -17,6 +17,8 @@ import { AlbumInfoComponent } from './Albums/album-info/album-info.component';
 import { CompteurComponent } from './shared/compteur/compteur.component';
 import { AlbumFormComponent } from './Albums/album-form/album-form.component';
 import { ArticleFormComponent } from './Articles/article-form/article-form.component';
+import { UserFormComponent } from './Users/user-form/user-form.component';
+import { UserDetailComponent } from './Users/user-detail/user-detail.component';
 
 @NgModule({
   // les composants utilisables par le module
@@ -32,7 +34,9 @@ import { ArticleFormComponent } from './Articles/article-form/article-form.compo
     AlbumInfoComponent,
     CompteurComponent,
     AlbumFormComponent,
-    ArticleFormComponent
+    ArticleFormComponent,
+    UserFormComponent,
+    UserDetailComponent
   ],
   // les modules à charger
   imports: [
